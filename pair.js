@@ -57,7 +57,7 @@ router.get('/', async (req, res) => {
 
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
 
-                        const sid = string_session;
+                        const sid = `izumi~${string_session}`;
 
                         const dt = await EypzPairWeb.sendMessage(user_jid, {
                             text: sid
